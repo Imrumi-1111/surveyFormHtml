@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+:root {
+  color: brown;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: inherit;
+  font-weight: 300;
+  line-height: 2;
+  margin: 0;
+  text-align: center;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 10;
+  left: 13;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url(../surveyimg.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  filter: blur(8px);
+}
+
+#title {
+  border: 1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: midnightblue;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 5px;
+  line-height: 3;
+}
+
+p {
+  font-size: 2rem;
+}
