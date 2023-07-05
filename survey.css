@@ -15,6 +15,7 @@ body {
   line-height: 2;
   margin: 0;
   text-align: center;
+  background-color: rgb(0, 124, 128);
 }
 body::before {
   content: "";
@@ -24,10 +25,18 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-image: url(../surveyimg.jpg);
+  
   background-repeat: no-repeat;
   background-position: left;
   filter: blur(8px);
+}
+.container{
+    margin: 1rem 8rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: aliceblue;
 }
 
 #title {
@@ -38,11 +47,11 @@ body::before {
   align-items: center;
   color: midnightblue;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-h1 {
-  font-size: 5px;
+h2 {
+  font-size: 1px;
   line-height: 3;
 }
 
